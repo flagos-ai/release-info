@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>镜像 on build-infra</title><link>https://flagos-ai.github.io/release-info/zh-cn/images/</link><description>Recent content in 镜像 on build-infra</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://flagos-ai.github.io/release-info/zh-cn/images/index.xml" rel="self" type="application/rss+xml"/><item><title>每镜像参考</title><link>https://flagos-ai.github.io/release-info/zh-cn/images/reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/images/reference/</guid><description>&lt;h1 id="每镜像参考"&gt;每镜像参考&lt;a class="anchor" href="#%e6%af%8f%e9%95%9c%e5%83%8f%e5%8f%82%e8%80%83"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;每个镜像里有什么：镜像 tag、镜像内设置的环境变量，以及完整依赖列表。由
+&lt;code&gt;configs.yaml&lt;/code&gt; + &lt;code&gt;base/&lt;/code&gt; 生成。&lt;/p&gt;
+
+&lt;h2 id="ascend-cann8.5.0"&gt;ascend-cann8.5.0&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann8.5.0:2.1.0-0&lt;/tt&gt;&lt;br&gt;
+&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;tt&gt;ubuntu:22.04&lt;/tt&gt; &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Python:&lt;/strong&gt; 3.11 &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Extras:&lt;/strong&gt; &lt;tt&gt;ascend-cann850&lt;/tt&gt;&lt;/p&gt;
+
+&lt;h4&gt;Base image environment&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;No extra environment (inherited from the base OS).&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;Runtime image environment (additional)&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;None beyond the base image.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;依赖 list&lt;/h4&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-npu==2.9.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="ascend-cann9.0.0"&gt;ascend-cann9.0.0&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann9.0.0:2.1.0-0&lt;/tt&gt;&lt;br&gt;
+&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;tt&gt;ubuntu:22.04&lt;/tt&gt; &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Python:&lt;/strong&gt; 3.11 &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Extras:&lt;/strong&gt; &lt;tt&gt;ascend-cann900&lt;/tt&gt;&lt;/p&gt;
+
+&lt;h4&gt;Base image environment&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;No extra environment (inherited from the base OS).&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;Runtime image environment (additional)&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;None beyond the base image.&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>贡献 on build-infra</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/</link><description>Recent content in 贡献 on build-infra</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://flagos-ai.github.io/release-info/zh-cn/contribution/index.xml" rel="self" type="application/rss+xml"/><item><title>厂商接入</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</guid><description>&lt;h1 id="厂商接入"&gt;厂商接入&lt;a class="anchor" href="#%e5%8e%82%e5%95%86%e6%8e%a5%e5%85%a5"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;如何把一个新的厂商/后端接入 FlagOS base 镜像流水线。你需要提供：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个 &lt;strong&gt;base containerfile&lt;/strong&gt; —— &lt;code&gt;base/&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;configs.yaml&lt;/code&gt; 里的一个 &lt;strong&gt;后端条目&lt;/strong&gt;（依赖 / 构建设置）&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;（可选）&lt;/em&gt; &lt;code&gt;.github/build-config.yml&lt;/code&gt; 里的一个 &lt;strong&gt;runner 覆盖项&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;合并后，由维护者按需构建镜像。不需要每个厂商单独的 JSON 或矩阵脚本——构建矩阵由
+&lt;code&gt;configs.yaml&lt;/code&gt; + &lt;code&gt;base/&lt;/code&gt; 推导得到。&lt;/p&gt;
+&lt;h2 id="流水线如何工作"&gt;流水线如何工作&lt;a class="anchor" href="#%e6%b5%81%e6%b0%b4%e7%ba%bf%e5%a6%82%e4%bd%95%e5%b7%a5%e4%bd%9c"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base/generate_matrix.py&lt;/code&gt; 读取 &lt;code&gt;configs.yaml&lt;/code&gt;，为每个存在 &lt;code&gt;base/&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;&lt;/code&gt;
+文件的后端生成一个构建矩阵条目（没有该文件的后端会被跳过）。&lt;code&gt;runson&lt;/code&gt; 和镜像仓库
+地址来自 &lt;code&gt;.github/build-config.yml&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.github/workflows/trigger.yml&lt;/code&gt; 是&lt;strong&gt;手动&lt;/strong&gt;（&lt;code&gt;workflow_dispatch&lt;/code&gt;）构建：选择一个
+后端（或 &lt;code&gt;all&lt;/code&gt;）以及是否推送。&lt;/li&gt;
+&lt;li&gt;每个条目运行 &lt;code&gt;python base/build.py &amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt; [--push]&lt;/code&gt;，它会从
+&lt;code&gt;.github/build-config.yml&lt;/code&gt; 读取镜像仓库地址、从 containerfile 的 OCI label 读取
+version/revision，并把镜像打标签为
+&lt;code&gt;flagos-base-&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;:&amp;lt;version&amp;gt;-&amp;lt;revision&amp;gt;&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="命名"&gt;命名&lt;a class="anchor" href="#%e5%91%bd%e5%90%8d"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;项目&lt;/th&gt;
+ &lt;th&gt;约定&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Base containerfile&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;base/&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;&lt;/code&gt;（如 &lt;code&gt;base/nvidia-cuda12.8&lt;/code&gt;）&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;镜像 tag&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;flagos-base-&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;:&amp;lt;version&amp;gt;-&amp;lt;revision&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;configs.yaml 键&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;vendors.&amp;lt;vendor&amp;gt;.&amp;lt;backend&amp;gt;&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;backend&amp;gt;&lt;/code&gt; 段是 SDK/工具链版本（如 &lt;code&gt;cuda12.8&lt;/code&gt;、&lt;code&gt;cann9.0.0&lt;/code&gt;、&lt;code&gt;neuware4.4.3&lt;/code&gt;），
+且必须在 &lt;code&gt;base/&lt;/code&gt; 文件名和 &lt;code&gt;configs.yaml&lt;/code&gt; 键之间保持一致。&lt;/p&gt;</description></item></channel></rss>
