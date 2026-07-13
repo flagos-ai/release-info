@@ -1,6 +1,6 @@
 {
-  "name": "build-infra",
-  "short_name": "build-infra",
+  "name": "Release Info",
+  "short_name": "Release Info",
   "start_url": "/release-info/",
   "scope": "/release-info/",
   "display": "standalone",
