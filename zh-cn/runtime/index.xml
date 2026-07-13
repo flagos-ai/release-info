@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>运行时镜像 on build-infra</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/</link><description>Recent content in 运行时镜像 on build-infra</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://flagos-ai.github.io/release-info/zh-cn/runtime/index.xml" rel="self" type="application/rss+xml"/><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton-ascend==3.2.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&amp;#43;ascend3.2&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton-ascend==3.2.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;ascend3.2&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-npu==2.9.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-npu==2.9.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -24,23 +24,23 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.5.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&amp;#43;ascend3.5&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.5.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;ascend3.5&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-npu==2.10.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-npu==2.10.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -48,24 +48,24 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-cambricon-neuware4.4.3:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-cambricon-neuware4.4.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.7.1&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.2.0&amp;#43;mlu1.7.2&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.2.0&amp;#43;mlu1.7.2&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;cambricon_dali==0.13.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.7.1&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-mlu==1.29.2&amp;#43;torch2.7.1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-mlu-ops==1.8.0&amp;#43;torch2.7.1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;cambricon_dali==0.13.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-mlu==1.29.2&amp;#43;torch2.7.1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-mlu-ops==1.8.0&amp;#43;torch2.7.1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -73,27 +73,27 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton-gcu==3.6.0&amp;#43;1.0.20260521.cc.1.9.10&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&amp;#43;enflame3.6&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton-gcu==3.6.0&amp;#43;1.0.20260521.cc.1.9.10&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;enflame3.6&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;pyefml==1.9.10&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.10.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.25.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-gcu==2.10.0&amp;#43;3.7.20260408&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;flash-attn==2.7.2&amp;#43;torch.2.9.1.gcu.3.4.20260323&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;pyefml==1.9.10&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.25.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-gcu==2.10.0&amp;#43;3.7.20260408&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;flash-attn==2.7.2&amp;#43;torch.2.9.1.gcu.3.4.20260323&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -101,22 +101,22 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.9.0&amp;#43;das.opt1.dtk2604&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.3.0&amp;#43;das.opt1.dtk2604.torch290&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.5.1&amp;#43;hcu3.1&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;das.opt1.dtk2604&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.3.0&amp;#43;das.opt1.dtk2604.torch290&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.1&amp;#43;hcu3.1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;das.opt1.dtk2604&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;das.opt1.dtk2604&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -124,23 +124,23 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.7.1&amp;#43;corex.4.4.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.1.0&amp;#43;corex.4.4.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.1.0&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.7.1&amp;#43;corex.4.4.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.7.1&amp;#43;corex.4.4.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.22.1&amp;#43;corex.4.4.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.7.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.22.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -148,36 +148,36 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cu129&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.0.0&amp;#43;a48aedef&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.5.1&amp;#43;xpu3.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cu129&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.0.0&amp;#43;a48aedef&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.1&amp;#43;xpu3.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;apex==0.1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;benchflow==1.0.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;colorama==0.4.6&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;flash_attn==2.4.2&amp;#43;7e2dd4d&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;hydrax==0.1.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;hyperparameter==0.5.6&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;psutil==6.1.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;regex==2026.4.4&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cu129&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.9.0&amp;#43;cu129&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.24.0&amp;#43;cu129&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch_plugin==0.1.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch_xray==2.0.4&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;xformers==0.0.29&amp;#43;1e7a8ec.d20260114&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;xmlir==1.0.0.1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;apex==0.1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;benchflow==1.0.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;colorama==0.4.6&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;flash_attn==2.4.2&amp;#43;7e2dd4d&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;hydrax==0.1.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;hyperparameter==0.5.6&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;psutil==6.1.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;regex==2026.4.4&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cu129&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.9.0&amp;#43;cu129&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.24.0&amp;#43;cu129&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch_plugin==0.1.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch_xray==2.0.4&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;xformers==0.0.29&amp;#43;1e7a8ec.d20260114&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;xmlir==1.0.0.1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -185,25 +185,25 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.8.0&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.0.0&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==3.1.0&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.8.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.0.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==3.1.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.8.0&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.4.1&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.15.1&amp;#43;metax3.7.2.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;flash_attn==2.6.3&amp;#43;metax3.7.2.0torch2.8&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.8.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.4.1&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.15.1&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;flash_attn==2.6.3&amp;#43;metax3.7.2.0torch2.8&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -211,32 +211,32 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.9.0&amp;#43;musa.4.3.6&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.6.0&amp;#43;git89458660&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa.4.3.6&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.6.0&amp;#43;git89458660&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;环境变量&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;&lt;th&gt;变量&lt;/th&gt;&lt;th&gt;值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;LD_LIBRARY_PATH&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;MTHREADS_VISIBLE_DEVICES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;all&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;MTHREADS_VISIBLE_DEVICES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;all&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;musa.4.3.6&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch_musa==2.9.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;mkl==2024.0.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa.4.3.6&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch_musa==2.9.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;mkl==2024.0.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -244,32 +244,32 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.9.0&amp;#43;musa5.2.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.6.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa5.2.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;环境变量&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;&lt;th&gt;变量&lt;/th&gt;&lt;th&gt;值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;LD_LIBRARY_PATH&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;MTHREADS_VISIBLE_DEVICES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;all&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;MTHREADS_VISIBLE_DEVICES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;all&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;musa5.2.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch_musa==2.9.1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;mkl==2024.0.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa5.2.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch_musa==2.9.1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;mkl==2024.0.0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -277,88 +277,88 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cu128&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.6.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cu128&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;环境变量&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;&lt;th&gt;变量&lt;/th&gt;&lt;th&gt;值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;NVIDIA_DRIVER_CAPABILITIES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;compute,utility&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;NVIDIA_VISIBLE_DEVICES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;all&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;NVIDIA_DRIVER_CAPABILITIES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;compute,utility&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;NVIDIA_VISIBLE_DEVICES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;all&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.10.0&amp;#43;cu128&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.10.0&amp;#43;cu128&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.25.0&amp;#43;cu128&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cu128&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.10.0&amp;#43;cu128&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.25.0&amp;#43;cu128&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.11.0&amp;#43;cu130&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.6.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.6.0&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cu130&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;环境变量&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;&lt;th&gt;变量&lt;/th&gt;&lt;th&gt;值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;NVIDIA_DRIVER_CAPABILITIES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;compute,utility&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;NVIDIA_VISIBLE_DEVICES&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;all&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;NVIDIA_DRIVER_CAPABILITIES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;compute,utility&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;NVIDIA_VISIBLE_DEVICES&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;all&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.11.0&amp;#43;cu130&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.11.0&amp;#43;cu130&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.26.0&amp;#43;cu130&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cu130&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.11.0&amp;#43;cu130&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.26.0&amp;#43;cu130&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-sunrise-tangrt1.2.0:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-sunrise-tangrt1.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.11.0&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.4.0.6&amp;#43;gite4f6d6e4&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.4.0.6&amp;#43;gite4f6d6e4&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.11.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.11.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.26.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-ptpu==0.2.3&amp;#43;torch2.11&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.11.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.26.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch-ptpu==0.2.3&amp;#43;torch2.11&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
@@ -366,34 +366,34 @@
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-sunrise-tangrt1.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;tt&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/tt&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4&gt;软件栈&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;tt&gt;torch==2.7.0&amp;#43;cpu&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;triton==3.3.0&amp;#43;gitfe2a28fa&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flagtree==0.5.0.post20260612&amp;#43;git705a4064&lt;/tt&gt;&lt;/li&gt;
- &lt;li&gt;&lt;tt&gt;flag_gems&lt;/tt&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;triton==3.3.0&amp;#43;gitfe2a28fa&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.0.post20260612&amp;#43;git705a4064&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;环境变量&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;&lt;th&gt;变量&lt;/th&gt;&lt;th&gt;值&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;TORCH_COMPILE_DISABLE&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;1&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;USE_TORCH_XLA&lt;/tt&gt;&lt;/td&gt;&lt;td&gt;&lt;tt&gt;0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;TORCH_COMPILE_DISABLE&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;USE_TORCH_XLA&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4&gt;依赖&lt;/h4&gt;
 &lt;table&gt;
 &lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.7.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchvision==0.22.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torchaudio==2.7.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch_txda==0.1.0&amp;#43;20260615.37ba6bbd&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;tt&gt;txops==0.1.0&amp;#43;20260508.60287151&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch==2.7.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchvision==0.22.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torchaudio==2.7.0&amp;#43;cpu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;torch_txda==0.1.0&amp;#43;20260615.37ba6bbd&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;txops==0.1.0&amp;#43;20260508.60287151&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
