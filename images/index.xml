@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Images on build-infra</title><link>https://flagos-ai.github.io/release-info/images/</link><description>Recent content in Images on build-infra</description><generator>Hugo</generator><language>en</language><atom:link href="https://flagos-ai.github.io/release-info/images/index.xml" rel="self" type="application/rss+xml"/><item><title>Per-image reference</title><link>https://flagos-ai.github.io/release-info/images/reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/images/reference/</guid><description>&lt;h1 id="per-image-reference"&gt;Per-image reference&lt;a class="anchor" href="#per-image-reference"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;What&amp;rsquo;s inside each image: the tag, the environment variables set inside it, and
+the full dependency list. Generated from &lt;code&gt;configs.yaml&lt;/code&gt; + &lt;code&gt;base/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id="ascend-cann8.5.0"&gt;ascend-cann8.5.0&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;tt&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann8.5.0:2.1.0-0&lt;/tt&gt;&lt;br&gt;
+&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;tt&gt;ubuntu:22.04&lt;/tt&gt; &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Python:&lt;/strong&gt; 3.11 &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Extras:&lt;/strong&gt; &lt;tt&gt;ascend-cann850&lt;/tt&gt;&lt;/p&gt;
+
+&lt;h4&gt;Base image environment&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;No extra environment (inherited from the base OS).&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;Runtime image environment (additional)&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;None beyond the base image.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;Dependency list&lt;/h4&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch==2.9.0&amp;#43;cpu&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;tr&gt;&lt;td&gt;&lt;tt&gt;torch-npu==2.9.0&lt;/tt&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="ascend-cann9.0.0"&gt;ascend-cann9.0.0&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;tt&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann9.0.0:2.1.0-0&lt;/tt&gt;&lt;br&gt;
+&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;tt&gt;ubuntu:22.04&lt;/tt&gt; &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Python:&lt;/strong&gt; 3.11 &amp;nbsp;·&amp;nbsp;
+&lt;strong&gt;Extras:&lt;/strong&gt; &lt;tt&gt;ascend-cann900&lt;/tt&gt;&lt;/p&gt;</description></item></channel></rss>
