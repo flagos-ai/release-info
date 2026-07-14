@@ -2,7 +2,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann8.5.0:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;cann8.5.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -16,9 +15,9 @@
  &lt;li&gt;&lt;code class="plain"&gt;make&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;net-tools&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;pciutils&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;python${PYTHON_VERSION}&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;python${PYTHON_VERSION}-dev&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;python3-pip&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;python3.11&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;python3.11-dev&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;unzip&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;SDK packages&lt;/h4&gt;
@@ -33,7 +32,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-ascend-cann9.0.0:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;cann9.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -47,9 +45,9 @@
  &lt;li&gt;&lt;code class="plain"&gt;make&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;net-tools&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;pciutils&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;python${PYTHON_VERSION}&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;python${PYTHON_VERSION}-dev&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;python3-pip&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;python3.11&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;python3.11-dev&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;unzip&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;SDK packages&lt;/h4&gt;
@@ -65,13 +63,9 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-cambricon-neuware4.4.3:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;neuware4.4.3&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;#&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;2&amp;gt;/dev/null&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;aptitude&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;build-essential&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;ca-certificates&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;cmake&lt;/code&gt;&lt;/li&gt;
@@ -83,10 +77,7 @@
  &lt;li&gt;&lt;code class="plain"&gt;libncurses5&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;libtinfo5&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;make&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;numactl&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;pciutils&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;sudo&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;tzdata&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;unzip&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;SDK packages&lt;/h4&gt;
@@ -114,13 +105,10 @@
  &lt;li&gt;cnclep 1.1.1.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/neuware/lib64&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/neuware/bin:$PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/neuware/lib64&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/neuware/bin:$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-cambricon-neuware4.4.3:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;
@@ -128,11 +116,9 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-enflame-tops1.9.10:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;tops1.9.10&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;2&amp;gt;/dev/null&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;build-essential&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;ca-certificates&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;code class="plain"&gt;cmake&lt;/code&gt;&lt;/li&gt;
@@ -160,7 +146,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-hygon-dtk26.04:2.1.0-1&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;dtk26.04&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -183,7 +168,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-iluvatar-corex4.4.0:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;corex4.4.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -200,14 +184,11 @@
  &lt;li&gt;CUDA Header files 260604&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;COREX_ROOT&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/corex&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/corex/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/corex/bin:$PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;COREX_ROOT=/usr/local/corex&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/corex/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/corex/bin:$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-iluvatar-corex4.4.0:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;
@@ -215,7 +196,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-kunlunxin-xre5.29.0:2.1.0-1&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;xre5.29.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -235,13 +215,10 @@
  &lt;li&gt;XCUDART 5.13.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/xpu/lib:/usr/local/xcudart/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/xpu/bin:$PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/xpu/lib:/usr/local/xcudart/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/xpu/bin:$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-kunlunxin-xre5.29.0:2.1.0-1 bash&lt;/code&gt;&lt;/pre&gt;
@@ -249,7 +226,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-metax-maca3.7.2.1:2.1.0-1&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;maca3.7.2.1&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -270,14 +246,11 @@
  &lt;li&gt;MACA SDK 3.7.2.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/opt/maca/lib:/opt/maca/mxgpu_llvm/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;MACA_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/opt/maca&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/opt/maca/mxgpu_llvm/bin:/opt/maca/bin:${PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/opt/maca/lib:/opt/maca/mxgpu_llvm/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;MACA_PATH=/opt/maca&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/opt/maca/mxgpu_llvm/bin:/opt/maca/bin:${PATH}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-metax-maca3.7.2.1:2.1.0-1 bash&lt;/code&gt;&lt;/pre&gt;
@@ -285,7 +258,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-mthreads-musa4.3.6:2.1.0-1&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;musa4.3.6&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -309,14 +281,11 @@
  &lt;li&gt;muDNN RC3.1.6&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;MUSA_HOME&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa/bin:${PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/musa/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;MUSA_HOME=/usr/local/musa&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/musa/bin:${PATH}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-mthreads-musa4.3.6:2.1.0-1 bash&lt;/code&gt;&lt;/pre&gt;
@@ -324,7 +293,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-mthreads-musa5.2.0:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;musa5.2.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -348,14 +316,11 @@
  &lt;li&gt;muDNN 3.4.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;MUSA_HOME&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/musa/bin:${PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/musa/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;MUSA_HOME=/usr/local/musa&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/musa/bin:${PATH}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-mthreads-musa5.2.0:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;
@@ -363,7 +328,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-nvidia-cuda12.8:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;nvcr.io/nvidia/cuda:12.8.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;cuda12.8&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -383,20 +347,16 @@
  &lt;li&gt;CUDA 12.8 (x86_64)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/cuda/bin:$PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/cuda/bin:$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagbase/flagos-base-nvidia-cuda12.8:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-nvidia-cuda13.3:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;nvcr.io/nvidia/cuda:13.3.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;cuda13.3&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -416,20 +376,16 @@
  &lt;li&gt;CUDA 13.3 (x86_64)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/cuda/bin:$PATH&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/cuda/bin:$PATH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagbase/flagos-base-nvidia-cuda13.3:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-sunrise-tangrt1.2.0:2.1.0-0&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;tangrt1.2.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -449,14 +405,11 @@
  &lt;li&gt;taBLAS 1.2.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/tangrt/targets/linux-x86_64/lib:/usr/local/tangrt/lib/linux-x86_64&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/tangrt/targets/linux-x86_64/lib:/usr/local/tangrt/lib/linux-x86_64&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;TANGRT_ROOT&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/tangrt&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/tangrt/targets/linux-x86_64/lib:/usr/local/tangrt/lib/linux-x86_64&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LIBRARY_PATH=/usr/local/tangrt/targets/linux-x86_64/lib:/usr/local/tangrt/lib/linux-x86_64&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;TANGRT_ROOT=/usr/local/tangrt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-sunrise-tangrt1.2.0:2.1.0-0 bash&lt;/code&gt;&lt;/pre&gt;
@@ -464,7 +417,6 @@
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagbase/flagos-base-tsingmicro-tsm260604:2.1.0-1&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Base OS:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:22.04&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;SDK version:&lt;/strong&gt; &lt;code class="plain"&gt;tsm260604&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;System packages&lt;/h4&gt;
 &lt;ul&gt;
@@ -491,20 +443,17 @@
  &lt;li&gt;LLVM a66376b0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Environment&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;KUIPER_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/kuiper&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/tx8_deps/lib:/usr/local/kuiper/lib:/usr/local/kuiper/tsm8-profiler/lib&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LLVM_BINARY_DIR&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/llvm/bin&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;LLVM_SYSPATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/llvm&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/kuiper/bin:${PATH}&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;PYTHONPATH&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/llvm/python_packages/mlir_core&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;TORCH_COMPILE_DISABLE&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;1&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;TX8_DEPS_ROOT&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;/usr/local/tx8_deps&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
- &lt;tr&gt;&lt;td&gt;&lt;code class="plain"&gt;USE_TORCH_XLA&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code class="plain"&gt;0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;KUIPER_PATH=/usr/local/kuiper&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=/usr/local/tx8_deps/lib:/usr/local/kuiper/lib:/usr/local/kuiper/tsm8-profiler/lib&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LLVM_BINARY_DIR=/usr/local/llvm/bin&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;LLVM_SYSPATH=/usr/local/llvm&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PATH=/usr/local/kuiper/bin:${PATH}&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;PYTHONPATH=/usr/local/llvm/python_packages/mlir_core&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;TORCH_COMPILE_DISABLE=1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;TX8_DEPS_ROOT=/usr/local/tx8_deps&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;code class="plain"&gt;USE_TORCH_XLA=0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagbase/flagos-base-tsingmicro-tsm260604:2.1.0-1 bash&lt;/code&gt;&lt;/pre&gt;
