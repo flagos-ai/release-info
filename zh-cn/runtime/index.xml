@@ -15,8 +15,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
@@ -33,8 +32,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-cambricon-neuware4.4.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -51,8 +49,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl -v /usr/bin/cnmon:/usr/bin/cnmon flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -73,8 +70,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -90,8 +86,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -107,8 +102,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -138,8 +132,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -158,8 +151,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -182,8 +174,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -206,8 +197,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -296,5 +286,4 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;该厂商的设备标志尚未最终确定——这条通用命令可能需要补充厂商特定的 --device / --gpus 标志。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --privileged --ipc=host -v /dev:/dev -v /lib/modules:/lib/modules flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
