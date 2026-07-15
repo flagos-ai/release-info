@@ -45,7 +45,8 @@ containerfile&amp;rsquo;s OCI labels, and tags the image
 &lt;/table&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;backend&amp;gt;&lt;/code&gt; segment is the SDK/toolkit version (e.g. &lt;code&gt;cuda12.8&lt;/code&gt;, &lt;code&gt;cann9.0.0&lt;/code&gt;,
 &lt;code&gt;neuware4.4.3&lt;/code&gt;) and must match between the &lt;code&gt;base/&lt;/code&gt; filename and the &lt;code&gt;configs.yaml&lt;/code&gt;
-key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; aarch64&lt;/li&gt;
@@ -92,7 +93,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann9.0.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann9.0.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; aarch64&lt;/li&gt;
@@ -140,7 +142,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/base/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/cambricon-neuware4.4.3/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-cambricon-neuware4.4.3:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/base/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/cambricon-neuware4.4.3/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -210,7 +213,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl -v /usr/bin/cnmon:/usr/bin/cnmon flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl -v /usr/bin/cnmon:/usr/bin/cnmon flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -261,7 +265,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -301,7 +306,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/base/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/iluvatar-corex4.4.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/base/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/iluvatar-corex4.4.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -349,7 +355,8 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# Host prerequisite: ix-container-toolkit &amp;gt;= 1.1.0
-docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.29.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.29.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -411,7 +418,8 @@ docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runti
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -443,9 +451,7 @@ docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runti
 &lt;li&gt;&lt;code&gt;LD_LIBRARY_PATH=/opt/maca/lib:/opt/maca/mxgpu_llvm/lib&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="verify"&gt;Verify&lt;a class="anchor" href="#verify"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Inside the container, confirm the accelerator is visible (the first run may take a moment):&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -464,7 +470,8 @@ docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runti
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/base/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/mthreads-musa4.3.6/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/base/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/mthreads-musa4.3.6/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -524,7 +531,8 @@ docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all flagos-runti
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# Host prerequisite: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0
-docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/base/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/mthreads-musa5.2.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/base/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/mthreads-musa5.2.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -584,7 +592,8 @@ docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# Host prerequisite: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0
-docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/base/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/nvidia-cuda12.8/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1&lt;/code&gt;&lt;/p&gt;
+docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/base/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/nvidia-cuda12.8/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:12.8.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -615,9 +624,7 @@ docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos
 &lt;li&gt;&lt;code&gt;LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="verify"&gt;Verify&lt;a class="anchor" href="#verify"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Inside the container, confirm the accelerator is visible (the first run may take a moment):&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -641,7 +648,8 @@ docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all flagos
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# Host prerequisite: nvidia-container-toolkit
-docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1&lt;/code&gt;&lt;/p&gt;
+docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/nvidia-cuda13.3/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:13.3.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -672,9 +680,7 @@ docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/co
 &lt;li&gt;&lt;code&gt;LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="verify"&gt;Verify&lt;a class="anchor" href="#verify"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Inside the container, confirm the accelerator is visible (the first run may take a moment):&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -698,7 +704,8 @@ docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/co
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;# Host prerequisite: nvidia-container-toolkit
-docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1&lt;/code&gt;&lt;/p&gt;
+docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/sunrise-tangrt1.2.0/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
@@ -749,7 +756,8 @@ docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/co
 
 &lt;h3&gt;Run&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-sunrise-tangrt1.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;em&gt;Device flags for this vendor aren&amp;#39;t finalized yet — this generic command may need vendor-specific --device / --gpus flags.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260604/</guid><description>&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Device flags for this vendor aren&amp;#39;t finalized yet — this generic command may need vendor-specific --device / --gpus flags.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260604/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
