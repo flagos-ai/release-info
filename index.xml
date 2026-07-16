@@ -213,7 +213,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl -v /usr/bin/cnmon:/usr/bin/cnmon flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.10/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
