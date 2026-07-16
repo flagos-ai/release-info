@@ -86,7 +86,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/mkfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;

@@ -86,7 +86,7 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/mkfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
