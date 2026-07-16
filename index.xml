@@ -826,4 +826,4 @@ docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/co
 &lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --privileged --ipc=host -v /dev:/dev -v /lib/modules:/lib/modules flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
