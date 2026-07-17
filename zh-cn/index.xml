@@ -48,7 +48,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 25.5.0&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -68,7 +68,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;ASCEND_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/davinci0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/davinci_manager &lt;span style="color:#79c0ff"&gt;\
@@ -77,7 +77,7 @@ version/revision，并把镜像打标签为
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/Ascend/driver:/usr/local/Ascend/driver &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/dcmi:/usr/local/dcmi &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -104,7 +104,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 26.0.rc1&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -125,7 +125,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;ASCEND_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/davinci0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/davinci_manager &lt;span style="color:#79c0ff"&gt;\
@@ -134,7 +134,7 @@ version/revision，并把镜像打标签为
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/Ascend/driver:/usr/local/Ascend/driver &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/dcmi:/usr/local/dcmi &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -236,7 +236,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Enflame Zixiao C200 (S60)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 1.9.10&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -269,7 +269,7 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --network host &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;TENCENT_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -299,7 +299,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Hygon BW1000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.3.30-V1.4.1a&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: dcu-container-toolkit &amp;gt;= 1.3.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: dcu-container-toolkit &amp;gt;= 1.3.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -323,7 +323,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;DCU_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/kfd &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/mkfd &lt;span style="color:#79c0ff"&gt;\
@@ -331,7 +331,7 @@ version/revision，并把镜像打标签为
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --group-add video &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /opt/hyhal:/opt/hyhal &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --security-opt &lt;span style="color:#79c0ff"&gt;seccomp&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;unconfined &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -357,7 +357,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Iluvatar BI-V150&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 4.4.0&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: ix-container-toolkit &amp;gt;= 1.1.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: ix-container-toolkit &amp;gt;= 1.1.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -388,11 +388,11 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --runtime iluvatar &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --env &lt;span style="color:#79c0ff"&gt;IX_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/iluvatar0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/local/corex:/usr/local/corex:ro &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -418,7 +418,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Kunlunxin P800&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.29.0.0&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -451,11 +451,11 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --runtime xpu &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;CXPU_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/xpu0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/xpuctrl &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -495,7 +495,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MetaX C550&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 3.8.30&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: metax-docker &amp;gt;= 0.15.3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: metax-docker &amp;gt;= 0.15.3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -529,12 +529,12 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;metax-docker &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --gpus all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/mxcd &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/dri &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --group-add video &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -563,7 +563,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -601,7 +601,7 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --runtime mthreads &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --env &lt;span style="color:#79c0ff"&gt;MTHREADS_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -633,7 +633,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -671,7 +671,7 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --runtime mthreads &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --env &lt;span style="color:#79c0ff"&gt;MTHREADS_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -703,7 +703,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: nvidia-container-toolkit&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: nvidia-container-toolkit&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -735,7 +735,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --gpus all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/nvidia0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/nvidiactl &lt;span style="color:#79c0ff"&gt;\
@@ -743,7 +743,7 @@ version/revision，并把镜像打标签为
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -776,7 +776,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: nvidia-container-toolkit&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: nvidia-container-toolkit&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -808,7 +808,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;strong&gt;使用容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt;：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --gpus all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/nvidia0 &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --device /dev/nvidiactl &lt;span style="color:#79c0ff"&gt;\
@@ -816,7 +816,7 @@ version/revision，并把镜像打标签为
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -880,7 +880,7 @@ version/revision，并把镜像打标签为
 &lt;h2 id="启动"&gt;启动&lt;a class="anchor" href="#%e5%90%af%e5%8a%a8"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器中启动交互式 shell：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="验证"&gt;验证&lt;a class="anchor" href="#%e9%aa%8c%e8%af%81"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在容器内，确认加速器可见：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pt_smi&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
@@ -906,7 +906,7 @@ version/revision，并把镜像打标签为
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Tsingmicro TX8110&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 260604163331.01&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选 —— 仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装)&lt;/em&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;abbr title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;&lt;em&gt;(可选)&lt;/em&gt;&lt;/abbr&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容&lt;a class="anchor" href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="基础镜像"&gt;基础镜像&lt;a class="anchor" href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f"&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -953,7 +953,7 @@ version/revision，并把镜像打标签为
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; --runtime&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;tsingmicro &lt;span style="color:#79c0ff"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -e &lt;span style="color:#79c0ff"&gt;TSINGMICRO_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all &lt;span style="color:#79c0ff"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-20-g18451ed bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-20-g9ab46c9 bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;无需工具包&lt;/strong&gt; —— 直接使用 docker / podman：&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
