@@ -45,7 +45,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;&lt;code&gt;&amp;lt;backend&amp;gt;&lt;/code&gt; 段是 SDK/工具链版本（如 &lt;code&gt;cuda12.8&lt;/code&gt;、&lt;code&gt;cann9.0.0&lt;/code&gt;、&lt;code&gt;neuware4.4.3&lt;/code&gt;），
 且必须在 &lt;code&gt;base/&lt;/code&gt; 文件名和 &lt;code&gt;configs.yaml&lt;/code&gt; 键之间保持一致。&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;25.5.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -62,9 +62,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it -e ASCEND_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it -e ASCEND_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
@@ -87,7 +87,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;26.0.rc1&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -105,9 +105,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it -e ASCEND_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it -e ASCEND_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
@@ -130,7 +130,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/davinci0 --device /dev/davinci_manager --device /dev/devmm_svm --device /dev/hisi_hdc -v /usr/local/Ascend/driver:/usr/local/Ascend/driver -v /usr/local/dcmi:/usr/local/dcmi -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-cambricon-neuware4.4.3:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-cambricon-neuware4.4.3:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;6.2.15&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -202,7 +202,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;启动（docker 或 podman 均可）:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/cambricon_dev0 --device /dev/cambricon_ctl flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;1.9.10&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -231,9 +231,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --network host -e TENCENT_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --network host -e TENCENT_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -260,7 +260,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;6.3.30-V1.4.1a&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -281,9 +281,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;dcu-container-toolkit &amp;gt;= 1.3.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it -e DCU_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it -e DCU_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/mkfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/mkfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -305,7 +305,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/kfd --device /dev/mkfd --device /dev/dri --group-add video -v /opt/hyhal:/opt/hyhal --security-opt seccomp=unconfined flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;4.4.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -332,9 +332,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;ix-container-toolkit &amp;gt;= 1.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime iluvatar --env IX_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/iluvatar0 -v /usr/local/corex:/usr/local/corex:ro harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/iluvatar0 -v /usr/local/corex:/usr/local/corex:ro harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -356,7 +356,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/iluvatar0 -v /usr/local/corex:/usr/local/corex:ro flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.29.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -385,9 +385,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;xpu_container &amp;gt;= 1.0.13&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime xpu -e CXPU_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime xpu -e CXPU_VISIBLE_DEVICES=0 harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -423,7 +423,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/xpu0 --device /dev/xpuctrl flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;3.8.30&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -454,9 +454,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;metax-docker &amp;gt;= 0.15.3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;metax-docker --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;metax-docker --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -481,7 +481,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mxcd --device /dev/dri --group-add video flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.2.0-server&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -515,9 +515,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -546,7 +546,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.2.0-server&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -580,9 +580,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime mthreads --env MTHREADS_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -611,7 +611,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/mtgpu.0 --device /dev/dri -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;nvcr.io/nvidia/cuda:12.8.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;610.43.02&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -640,9 +640,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -671,7 +671,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;nvcr.io/nvidia/cuda:13.3.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;610.43.02&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -700,9 +700,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -731,7 +731,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-uvm -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;0.24.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -761,7 +761,7 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;在容器中启动交互式 shell:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-sunrise-tangrt1.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -782,7 +782,7 @@ version/revision，并把镜像打标签为
 &lt;p&gt;在容器中启动交互式 shell:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it flagos-runtime-sunrise-tangrt1.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-18-ga423af1&lt;/code&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-19-g483e212&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;基础系统:&lt;/strong&gt; &lt;code class="plain"&gt;ubuntu:24.04&lt;/code&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;260604163331.01&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -825,9 +825,9 @@ version/revision，并把镜像打标签为
 
 &lt;h3&gt;运行&lt;/h3&gt;
 &lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime=tsingmicro -e TSINGMICRO_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime=tsingmicro -e TSINGMICRO_VISIBLE_DEVICES=all harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-18-ga423af1 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-19-g483e212 bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
