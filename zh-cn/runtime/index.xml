@@ -81,7 +81,9 @@
 &lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;启动（docker 或 podman 均可）:&lt;/p&gt;
+&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --network host -e TENCENT_VISIBLE_DEVICES=all flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
@@ -332,5 +334,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;启动（docker 或 podman 均可）:&lt;/p&gt;
+&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime=tsingmicro -e TSINGMICRO_VISIBLE_DEVICES=all flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

@@ -67,7 +67,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it -e &lt;span style="color:#79c0ff"&gt;ASCEND_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-19-ge0c6cbb bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it -e &lt;span style="color:#79c0ff"&gt;ASCEND_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-17-g361735c bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
@@ -212,6 +212,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Enflame Zixiao C200 (S60)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 1.9.10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional — only for the toolkit launch below; the plain docker/podman command needs none)&lt;/em&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="system-packages"&gt;System packages&lt;a class="anchor" href="#system-packages"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Explicitly installed; the version is the one baked into this image:&lt;/p&gt;
@@ -237,7 +238,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;li&gt;Gculare-perftest 1.9.10&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Start an interactive shell (works with docker or podman):&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -259,7 +260,9 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;p&gt;Launch (works with docker or podman):&lt;/p&gt;
+&lt;p&gt;With the container toolkit (optional) (&lt;code class="plain"&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --network host -e TENCENT_VISIBLE_DEVICES=all flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Without a toolkit — plain docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</guid><description>&lt;h2 id="base-image"&gt;Base image&lt;a class="anchor" href="#base-image"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -286,7 +289,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;dcu-container-toolkit &amp;gt;= 1.3.0&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it -e &lt;span style="color:#79c0ff"&gt;DCU_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-19-ge0c6cbb bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it -e &lt;span style="color:#79c0ff"&gt;DCU_VISIBLE_DEVICES&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;all harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-17-g361735c bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -643,7 +646,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-19-ge0c6cbb bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-17-g361735c bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -704,7 +707,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-19-ge0c6cbb bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it --gpus all harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-17-g361735c bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Without a toolkit&lt;/strong&gt; — plain docker / podman:&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
@@ -765,7 +768,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Start an interactive shell in the container:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-19-ge0c6cbb bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="verify"&gt;Verify&lt;a class="anchor" href="#verify"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run --rm -it harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-17-g361735c bash&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="verify"&gt;Verify&lt;a class="anchor" href="#verify"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Inside the container, confirm the accelerator is visible (the first run may take a moment):&lt;/p&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-sunrise-tangrt1.2.0:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
@@ -792,6 +795,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Tsingmicro TX8110&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 260604163331.01&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional — only for the toolkit launch below; the plain docker/podman command needs none)&lt;/em&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="system-packages"&gt;System packages&lt;a class="anchor" href="#system-packages"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Explicitly installed; the version is the one baked into this image:&lt;/p&gt;
@@ -831,7 +835,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;li&gt;&lt;code&gt;TORCH_COMPILE_DISABLE=1&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="launch"&gt;Launch&lt;a class="anchor" href="#launch"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Start an interactive shell (works with docker or podman):&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;With the container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; (&lt;code&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
  &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
@@ -857,5 +861,7 @@ key.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>ht
 &lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;p&gt;Launch (works with docker or podman):&lt;/p&gt;
+&lt;p&gt;With the container toolkit (optional) (&lt;code class="plain"&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime=tsingmicro -e TSINGMICRO_VISIBLE_DEVICES=all flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Without a toolkit — plain docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

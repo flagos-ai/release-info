@@ -81,7 +81,9 @@
 &lt;p class="muted"&gt;&lt;em&gt;Greyed = fallback compiler (flagtree is the default; triton is used only if flagtree is unavailable).&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;p&gt;Launch (works with docker or podman):&lt;/p&gt;
+&lt;p&gt;With the container toolkit (optional) (&lt;code class="plain"&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --network host -e TENCENT_VISIBLE_DEVICES=all flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Without a toolkit — plain docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;Contents&lt;/h3&gt;
 &lt;ul&gt;
  &lt;li&gt;&lt;strong&gt;Image:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag scheme being finalized)&lt;/em&gt;&lt;/li&gt;
@@ -329,5 +331,7 @@
 &lt;/ul&gt;
 
 &lt;h3&gt;Run&lt;/h3&gt;
-&lt;p&gt;Launch (works with docker or podman):&lt;/p&gt;
+&lt;p&gt;With the container toolkit (optional) (&lt;code class="plain"&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run --rm -it --runtime=tsingmicro -e TSINGMICRO_VISIBLE_DEVICES=all flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Without a toolkit — plain docker / podman:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run --rm -it --device /dev/accel --device /dev/accel_drv_mgr flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
