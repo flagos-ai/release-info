@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contribution on Release Info</title><link>https://flagos-ai.github.io/release-info/contribution/</link><description>Recent content in Contribution on Release Info</description><generator>Hugo</generator><language>en</language><atom:link href="https://flagos-ai.github.io/release-info/contribution/index.xml" rel="self" type="application/rss+xml"/><item><title>Vendor onboarding</title><link>https://flagos-ai.github.io/release-info/contribution/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/contribution/onboarding/</guid><description>&lt;h1 id="vendor-onboarding"&gt;Vendor onboarding&lt;a class="anchor" href="#vendor-onboarding"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;How to add a new vendor/backend to the FlagOS base image pipeline. You provide:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contribution on Release Info</title><link>https://flagos-ai.github.io/release-info/contribution/</link><description>Recent content in Contribution on Release Info</description><generator>Hugo</generator><language>en</language><atom:link href="https://flagos-ai.github.io/release-info/contribution/index.xml" rel="self" type="application/rss+xml"/><item><title>Vendor onboarding</title><link>https://flagos-ai.github.io/release-info/contribution/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/contribution/onboarding/</guid><description>&lt;h1 id="vendor-onboarding"&gt;Vendor onboarding &lt;a href="#vendor-onboarding" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;How to add a new vendor/backend to the FlagOS base image pipeline. You provide:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;A &lt;strong&gt;base containerfile&lt;/strong&gt; — &lt;code&gt;base/&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;backend entry&lt;/strong&gt; in &lt;code&gt;configs.yaml&lt;/code&gt; (dependencies / build settings)&lt;/li&gt;
@@ -8,8 +7,7 @@
 &lt;p&gt;After it merges, a maintainer builds the image on demand. No per-vendor JSON or
 matrix scripting is needed — the build matrix is derived from &lt;code&gt;configs.yaml&lt;/code&gt; +
 &lt;code&gt;base/&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id="how-the-pipeline-works"&gt;How the pipeline works&lt;a class="anchor" href="#how-the-pipeline-works"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id="how-the-pipeline-works"&gt;How the pipeline works &lt;a href="#how-the-pipeline-works" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;base/generate_matrix.py&lt;/code&gt; reads &lt;code&gt;configs.yaml&lt;/code&gt; and emits one build-matrix entry
 per backend that has a &lt;code&gt;base/&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;&lt;/code&gt; file (backends without one are
 skipped). &lt;code&gt;runson&lt;/code&gt; and the registry come from &lt;code&gt;.github/build-config.yml&lt;/code&gt;.&lt;/li&gt;
@@ -20,8 +18,7 @@ the registry from &lt;code&gt;.github/build-config.yml&lt;/code&gt;, the version
 containerfile&amp;rsquo;s OCI labels, and tags the image
 &lt;code&gt;flagos-base-&amp;lt;vendor&amp;gt;-&amp;lt;backend&amp;gt;:&amp;lt;version&amp;gt;-&amp;lt;revision&amp;gt;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="naming"&gt;Naming&lt;a class="anchor" href="#naming"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;table&gt;
+&lt;h2 id="naming"&gt;Naming &lt;a href="#naming" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
  &lt;th&gt;Item&lt;/th&gt;
