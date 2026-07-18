@@ -13,7 +13,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  --&gt;
-&lt;h1 id="厂商接入"&gt;厂商接入 &lt;a href="#%e5%8e%82%e5%95%86%e6%8e%a5%e5%85%a5" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;如何把一个新的厂商/后端接入 FlagOS base 镜像流水线。你需要提供：&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</guid><description>&lt;!--
+&lt;h1 id="厂商接入"&gt;厂商接入 &lt;a href="#%e5%8e%82%e5%95%86%e6%8e%a5%e5%85%a5" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;如何把一个新的厂商/后端接入 FlagOS base 镜像流水线。你需要提供：&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,45 +27,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-ascend-cann850"&gt;title: &amp;ldquo;ascend-cann8.5.0&amp;rdquo; &lt;a href="#title-ascend-cann850" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 25.5.0&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann8.5.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;25.5.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;ascend3.2&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-npu==2.9.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton-ascend==3.2.0&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- -e ASCEND_VISIBLE_DEVICES=0 \
- flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/davinci0 \
- --device /dev/davinci_manager \
- --device /dev/devmm_svm \
- --device /dev/hisi_hdc \
- -v /usr/local/Ascend/driver:/usr/local/Ascend/driver \
- -v /usr/local/dcmi:/usr/local/dcmi \
- -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi \
- flagos-runtime-ascend-cann8.5.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann9.0.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -79,45 +49,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-ascend-cann900"&gt;title: &amp;ldquo;ascend-cann9.0.0&amp;rdquo; &lt;a href="#title-ascend-cann900" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 26.0.rc1&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-ascend-cann9.0.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.11&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;26.0.rc1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;ascend3.5&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-npu==2.10.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.5.0 (&amp;#43; triton_ascend==3.2.1)&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- -e ASCEND_VISIBLE_DEVICES=0 \
- flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/davinci0 \
- --device /dev/davinci_manager \
- --device /dev/devmm_svm \
- --device /dev/hisi_hdc \
- -v /usr/local/Ascend/driver:/usr/local/Ascend/driver \
- -v /usr/local/dcmi:/usr/local/dcmi \
- -v /usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi \
- flagos-runtime-ascend-cann9.0.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/cambricon-neuware4.4.3/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -131,35 +71,14 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-cambricon-neuware443"&gt;title: &amp;ldquo;cambricon-neuware4.4.3&amp;rdquo; &lt;a href="#title-cambricon-neuware443" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Cambricon MLU590&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.2.15&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>cambricon-neuware4.4.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-cambricon-neuware4.4.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;6.2.15&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;cambricon_dali==0.13.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-mlu-ops==1.8.0&amp;#43;torch2.7.1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-mlu==1.29.2&amp;#43;torch2.7.1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;triton==3.2.0&amp;#43;mlu1.7.2&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;启动（docker 或 podman 均可）:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/cambricon_dev0 \
- --device /dev/cambricon_ctl \
- flagos-runtime-cambricon-neuware4.4.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -173,42 +92,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-enflame-tops1910"&gt;title: &amp;ldquo;enflame-tops1.9.10&amp;rdquo; &lt;a href="#title-enflame-tops1910" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Enflame Zixiao C200 (S60)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 1.9.10&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-enflame-tops1.9.10:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;1.9.10&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;enflame3.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flash-attn==2.7.2&amp;#43;torch.2.9.1.gcu.3.4.20260323&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;pyefml==1.9.10&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-gcu==2.10.0&amp;#43;3.7.20260408&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.10.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.25.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton-gcu==3.6.0&amp;#43;1.0.20260521.cc.1.9.10&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tencent-container-toolkit &amp;gt;= 2.0.52&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --network host \
- -e TENCENT_VISIBLE_DEVICES=all \
- flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it --device /dev/gcu flagos-runtime-enflame-tops1.9.10:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/hygon-dtk26.04/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -222,43 +114,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-hygon-dtk2604"&gt;title: &amp;ldquo;hygon-dtk26.04&amp;rdquo; &lt;a href="#title-hygon-dtk2604" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Hygon BW1000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.3.30-V1.4.1a&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: dcu-container-toolkit &amp;gt;= 1.3.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-hygon-dtk26.04:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;6.3.30-V1.4.1a&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.1&amp;#43;hcu3.1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;das.opt1.dtk2604&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.3.0&amp;#43;das.opt1.dtk2604.torch290&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;dcu-container-toolkit &amp;gt;= 1.3.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- -e DCU_VISIBLE_DEVICES=all \
- flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/kfd \
- --device /dev/mkfd \
- --device /dev/dri \
- --group-add video \
- -v /opt/hyhal:/opt/hyhal \
- --security-opt seccomp=unconfined \
- flagos-runtime-hygon-dtk26.04:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/iluvatar-corex4.4.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -272,40 +136,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-iluvatar-corex440"&gt;title: &amp;ldquo;iluvatar-corex4.4.0&amp;rdquo; &lt;a href="#title-iluvatar-corex440" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Iluvatar BI-V150&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 4.4.0&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: ix-container-toolkit &amp;gt;= 1.1.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>iluvatar-corex4.4.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-iluvatar-corex4.4.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;4.4.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.7.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.22.1&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;triton==3.1.0&amp;#43;corex.4.4.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;ix-container-toolkit &amp;gt;= 1.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --runtime iluvatar \
- --env IX_VISIBLE_DEVICES=all \
- flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/iluvatar0 \
- -v /usr/local/corex:/usr/local/corex:ro \
- flagos-runtime-iluvatar-corex4.4.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/kunlunxin-xre5.29.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -319,54 +158,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-kunlunxin-xre5290"&gt;title: &amp;ldquo;kunlunxin-xre5.29.0&amp;rdquo; &lt;a href="#title-kunlunxin-xre5290" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Kunlunxin P800&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.29.0.0&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-kunlunxin-xre5.29.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.29.0.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;apex==0.1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;benchflow==1.0.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;colorama==0.4.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.1&amp;#43;xpu3.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flash_attn==2.4.2&amp;#43;7e2dd4d&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;hydrax==0.1.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;hyperparameter==0.5.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;psutil==6.1.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;regex==2026.4.4&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;cu129&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch_plugin==0.1.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch_xray==2.0.4&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.9.0&amp;#43;cu129&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.24.0&amp;#43;cu129&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.0.0&amp;#43;a48aedef&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;xformers==0.0.29&amp;#43;1e7a8ec.d20260114&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;xmlir==1.0.0.1&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;xpu_container &amp;gt;= 1.0.13&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --runtime xpu \
- -e CXPU_VISIBLE_DEVICES=0 \
- flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/xpu0 \
- --device /dev/xpuctrl \
- flagos-runtime-kunlunxin-xre5.29.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/metax-maca3.7.2.1/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -380,41 +180,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-metax-maca3721"&gt;title: &amp;ldquo;metax-maca3.7.2.1&amp;rdquo; &lt;a href="#title-metax-maca3721" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MetaX C550&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 3.8.30&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: metax-docker &amp;gt;= 0.15.3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-metax-maca3.7.2.1:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;3.8.30&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==3.1.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flash_attn==2.6.3&amp;#43;metax3.7.2.0torch2.8&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.8.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.4.1&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.15.1&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.0.0&amp;#43;metax3.7.2.0&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;metax-docker &amp;gt;= 0.15.3&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;metax-docker --gpus all flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/mxcd \
- --device /dev/dri \
- --group-add video \
- flagos-runtime-metax-maca3.7.2.1:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa4.3.6/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -428,48 +202,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-mthreads-musa436"&gt;title: &amp;ldquo;mthreads-musa4.3.6&amp;rdquo; &lt;a href="#title-mthreads-musa436" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa4.3.6</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa4.3.6:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.2.0-server&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;mkl==2024.0.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa.4.3.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch_musa==2.9.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.6.0&amp;#43;git89458660&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;环境变量&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;MTHREADS_VISIBLE_DEVICES=all&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --runtime mthreads \
- --env MTHREADS_VISIBLE_DEVICES=all \
- flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/mtgpu.0 \
- --device /dev/dri \
- -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro \
- flagos-runtime-mthreads-musa4.3.6:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/mthreads-musa5.2.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -483,48 +224,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-mthreads-musa520"&gt;title: &amp;ldquo;mthreads-musa5.2.0&amp;rdquo; &lt;a href="#title-mthreads-musa520" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>mthreads-musa5.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-mthreads-musa5.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;5.2.0-server&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&amp;#43;mthreads3.6&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;mkl==2024.0.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.9.0&amp;#43;musa5.2.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch_musa==2.9.1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;环境变量&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;LD_LIBRARY_PATH=${VIRTUAL_ENV}/lib:${LD_LIBRARY_PATH}&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;MTHREADS_VISIBLE_DEVICES=all&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --runtime mthreads \
- --env MTHREADS_VISIBLE_DEVICES=all \
- flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/mtgpu.0 \
- --device /dev/dri \
- -v /usr/bin/mthreads-gmi:/usr/bin/mthreads-gmi:ro \
- flagos-runtime-mthreads-musa5.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda12.8/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -538,48 +246,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-nvidia-cuda128"&gt;title: &amp;ldquo;nvidia-cuda12.8&amp;rdquo; &lt;a href="#title-nvidia-cuda128" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:12.8.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda12.8:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;610.43.02&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.10.0&amp;#43;cu128&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.10.0&amp;#43;cu128&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.25.0&amp;#43;cu128&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;环境变量&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;NVIDIA_DRIVER_CAPABILITIES=compute,utility&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;NVIDIA_VISIBLE_DEVICES=all&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it --gpus all flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/nvidia0 \
- --device /dev/nvidiactl \
- --device /dev/nvidia-uvm \
- -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro \
- -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro \
- -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro \
- flagos-runtime-nvidia-cuda12.8:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:12.8.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/nvidia-cuda13.3/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -593,48 +268,15 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-nvidia-cuda133"&gt;title: &amp;ldquo;nvidia-cuda13.3&amp;rdquo; &lt;a href="#title-nvidia-cuda133" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:13.3.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>nvidia-cuda13.3</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-nvidia-cuda13.3:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.12&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;610.43.02&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.6.0&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cu130&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.11.0&amp;#43;cu130&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.26.0&amp;#43;cu130&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.6.0&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;环境变量&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;NVIDIA_DRIVER_CAPABILITIES=compute,utility&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;NVIDIA_VISIBLE_DEVICES=all&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;nvidia-container-toolkit&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it --gpus all flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/nvidia0 \
- --device /dev/nvidiactl \
- --device /dev/nvidia-uvm \
- -v /usr/bin/nvidia-smi:/usr/bin/nvidia-smi:ro \
- -v /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:ro \
- -v /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/x86_64-linux-gnu/libcuda.so.1:ro \
- flagos-runtime-nvidia-cuda13.3:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;nvcr.io/nvidia/cuda:13.3.0-runtime-ubuntu24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/sunrise-tangrt1.2.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -648,32 +290,14 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-sunrise-tangrt120"&gt;title: &amp;ldquo;sunrise-tangrt1.2.0&amp;rdquo; &lt;a href="#title-sunrise-tangrt120" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Sunrise SR-SUN-S2-X1&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 0.24.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-sunrise-tangrt1.2.0:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;0.24.0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch-ptpu==0.2.3&amp;#43;torch2.11&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.11.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.11.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.26.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;triton==3.4.0.6&amp;#43;gite4f6d6e4&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;在容器中启动交互式 shell:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it flagos-runtime-sunrise-tangrt1.2.0:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/tsingmicro-tsm260604/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -687,46 +311,318 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
- --&gt;
-&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-tsingmicro-tsm260604"&gt;title: &amp;ldquo;tsingmicro-tsm260604&amp;rdquo; &lt;a href="#title-tsingmicro-tsm260604" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Tsingmicro TX8110&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 260604163331.01&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260604</title><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;h3&gt;内容&lt;/h3&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;镜像:&lt;/strong&gt; &lt;code class="plain"&gt;flagos-runtime-tsingmicro-tsm260604:latest&lt;/code&gt; &lt;em&gt;(tag 方案待定)&lt;/em&gt;&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; 3.10&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; &lt;code class="plain"&gt;260604163331.01&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann8.5.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
 
-&lt;h4&gt;主要 Python 软件包&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flag_gems&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;flagtree==0.5.0.post20260612&amp;#43;git705a4064&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch==2.7.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torch_txda==0.1.0&amp;#43;20260615.37ba6bbd&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchaudio==2.7.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;torchvision==0.22.0&amp;#43;cpu&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;span class="muted"&gt;&lt;code class="plain"&gt;triton==3.3.0&amp;#43;gitfe2a28fa&lt;/code&gt;&lt;/span&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;txops==0.1.0&amp;#43;20260508.60287151&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class="muted"&gt;&lt;em&gt;灰色 = 备用编译器（默认使用 flagtree；仅当 flagtree 不可用时才回退到 triton）。&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;环境变量&lt;/h4&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;code class="plain"&gt;TORCH_COMPILE_DISABLE=1&lt;/code&gt;&lt;/li&gt;
- &lt;li&gt;&lt;code class="plain"&gt;USE_TORCH_XLA=0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
 
-&lt;h3&gt;运行&lt;/h3&gt;
-&lt;p&gt;使用容器工具包（可选） (&lt;code class="plain"&gt;tx-container-toolkit &amp;gt;= 2.5.0&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --runtime=tsingmicro \
- -e TSINGMICRO_VISIBLE_DEVICES=all \
- flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;无需工具包 —— 直接使用 docker / podman:&lt;/p&gt;
-&lt;pre class="language-bash"&gt;&lt;code class="language-bash"&gt;docker run --rm -it \
- --device /dev/accel \
- --device /dev/accel_drv_mgr \
- flagos-runtime-tsingmicro-tsm260604:latest bash&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-ascend-cann850"&gt;title: &amp;ldquo;ascend-cann8.5.0&amp;rdquo; &lt;a href="#title-ascend-cann850" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 25.5.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann8.5.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/ascend-cann9.0.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-ascend-cann900"&gt;title: &amp;ldquo;ascend-cann9.0.0&amp;rdquo; &lt;a href="#title-ascend-cann900" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 26.0.rc1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-ascend-cann9.0.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/cambricon-neuware4.4.3/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-cambricon-neuware443"&gt;title: &amp;ldquo;cambricon-neuware4.4.3&amp;rdquo; &lt;a href="#title-cambricon-neuware443" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Cambricon MLU590&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.2.15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-cambricon-neuware4.4.3:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/enflame-tops1.9.10/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-enflame-tops1910"&gt;title: &amp;ldquo;enflame-tops1.9.10&amp;rdquo; &lt;a href="#title-enflame-tops1910" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Enflame Zixiao C200 (S60)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 1.9.10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/hygon-dtk26.04/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-hygon-dtk2604"&gt;title: &amp;ldquo;hygon-dtk26.04&amp;rdquo; &lt;a href="#title-hygon-dtk2604" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Hygon BW1000&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.3.30-V1.4.1a&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: dcu-container-toolkit &amp;gt;= 1.3.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-hygon-dtk26.04:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/iluvatar-corex4.4.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-iluvatar-corex440"&gt;title: &amp;ldquo;iluvatar-corex4.4.0&amp;rdquo; &lt;a href="#title-iluvatar-corex440" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Iluvatar BI-V150&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 4.4.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: ix-container-toolkit &amp;gt;= 1.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-iluvatar-corex4.4.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-kunlunxin-xre5290"&gt;title: &amp;ldquo;kunlunxin-xre5.29.0&amp;rdquo; &lt;a href="#title-kunlunxin-xre5290" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Kunlunxin P800&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.29.0.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/metax-maca3.7.2.1/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-metax-maca3721"&gt;title: &amp;ldquo;metax-maca3.7.2.1&amp;rdquo; &lt;a href="#title-metax-maca3721" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MetaX C550&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 3.8.30&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: metax-docker &amp;gt;= 0.15.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-metax-maca3.7.2.1:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa4.3.6/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-mthreads-musa436"&gt;title: &amp;ldquo;mthreads-musa4.3.6&amp;rdquo; &lt;a href="#title-mthreads-musa436" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa4.3.6:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/mthreads-musa5.2.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-mthreads-musa520"&gt;title: &amp;ldquo;mthreads-musa5.2.0&amp;rdquo; &lt;a href="#title-mthreads-musa520" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; MThreads MTT S5000&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 5.2.0-server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: KUAE Cloud Native Toolkits (MT Container Toolkit) &amp;gt;= 2.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-mthreads-musa5.2.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda12.8/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-nvidia-cuda128"&gt;title: &amp;ldquo;nvidia-cuda12.8&amp;rdquo; &lt;a href="#title-nvidia-cuda128" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda12.8:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/nvidia-cuda13.3/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-nvidia-cuda133"&gt;title: &amp;ldquo;nvidia-cuda13.3&amp;rdquo; &lt;a href="#title-nvidia-cuda133" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 610.43.02&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-nvidia-cuda13.3:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/sunrise-tangrt1.2.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-sunrise-tangrt120"&gt;title: &amp;ldquo;sunrise-tangrt1.2.0&amp;rdquo; &lt;a href="#title-sunrise-tangrt120" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Sunrise SR-SUN-S2-X1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 0.24.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-sunrise-tangrt1.2.0:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item><item><title/><link>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/runtime/tsingmicro-tsm260604/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;hr&gt;
+&lt;h2 id="title-tsingmicro-tsm260604"&gt;title: &amp;ldquo;tsingmicro-tsm260604&amp;rdquo; &lt;a href="#title-tsingmicro-tsm260604" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Tsingmicro TX8110&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 260604163331.01&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;harbor.baai.ac.cn/flagos-base/flagos-base-tsingmicro-tsm260604:2.1.1-31-g853fdf7&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>
