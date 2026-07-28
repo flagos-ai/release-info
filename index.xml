@@ -216,7 +216,28 @@ all Python packages.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0
 &lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="built-on"&gt;Built on &lt;a href="#built-on" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-enflame-tops1.9.10:2.1.1&lt;/code&gt; &lt;a href="../../base/enflame-tops1.9.10/" title="View base image details" aria-label="View base image details"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.12&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</guid><description>&lt;!--
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.12&lt;/p&gt;</description></item><item><title>enflame-tops1.9.17</title><link>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.17/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/enflame-tops1.9.17/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Enflame Zixiao C200 (S60)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 1.9.17&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: tencent-container-toolkit &amp;gt;= 2.0.52&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>hygon-dtk26.04</title><link>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/hygon-dtk26.04/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -320,10 +341,10 @@ all Python packages.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0
 &lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Kunlunxin P800&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 5.29.0.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 5.29.0&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;!--
+&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.29.0</title><link>https://flagos-ai.github.io/release-info/runtime/kunlunxin-xre5.29.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/runtime/kunlunxin-xre5.29.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -345,7 +366,28 @@ all Python packages.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0
 &lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="built-on"&gt;Built on &lt;a href="#built-on" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-base/flagos-base-kunlunxin-xre5.29.0:2.1.1&lt;/code&gt; &lt;a href="../../base/kunlunxin-xre5.29.0/" title="View base image details" aria-label="View base image details"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</guid><description>&lt;!--
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>kunlunxin-xre5.37.1</title><link>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.37.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/kunlunxin-xre5.37.1/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Kunlunxin P800&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 5.37.1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>metax-maca3.7.2.1</title><link>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/metax-maca3.7.2.1/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
