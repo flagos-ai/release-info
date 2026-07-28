@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>发布信息</title><link>https://flagos-ai.github.io/release-info/zh-cn/</link><description>Recent content on 发布信息</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://flagos-ai.github.io/release-info/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>厂商接入</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</guid><description>&lt;!--
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>发布信息</title><link>https://flagos-ai.github.io/release-info/zh-cn/</link><description>Recent content on 发布信息</description><generator>Hugo</generator><language>zh-cn</language><atom:link href="https://flagos-ai.github.io/release-info/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>vLLM</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/vllm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/vllm/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;&lt;strong&gt;vLLM 应用镜像&lt;/strong&gt;构建在 &lt;code&gt;flagos-runtime&lt;/code&gt; 之上，打包一个可运行的 vLLM 服务
+与 vllm-plugin-FL 插件。&lt;/p&gt;</description></item><item><title>厂商接入</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/contribution/onboarding/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
