@@ -60,7 +60,7 @@
 &lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Cambricon MLU590&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 6.2.15&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</guid><description>&lt;!--
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基础镜像"&gt;基础镜像 &lt;a href="#%e5%9f%ba%e7%a1%80%e9%95%9c%e5%83%8f" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:22.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>enflame-tops1.9.10</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/enflame-tops1.9.10/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
