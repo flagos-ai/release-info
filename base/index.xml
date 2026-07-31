@@ -332,4 +332,25 @@
 &lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 260604163331.01&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item><item><title>tsingmicro-tsm260610</title><link>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260610/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/tsingmicro-tsm260610/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; Tsingmicro TX8110&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 260610164501.01&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: tx-container-toolkit &amp;gt;= 2.5.0&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="base-image"&gt;Base image &lt;a href="#base-image" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;code&gt;ubuntu:24.04&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>
