@@ -29,7 +29,23 @@
  limitations under the License.
  --&gt;
 &lt;p&gt;The &lt;strong&gt;vLLM app image&lt;/strong&gt; is built on top of a &lt;code&gt;flagos-runtime&lt;/code&gt; image and
-packages a ready-to-run vLLM server with vllm-plugin-FL.&lt;/p&gt;</description></item><item><title>Upgrading uv</title><link>https://flagos-ai.github.io/release-info/contribution/upgrading-uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/contribution/upgrading-uv/</guid><description>&lt;!--
+packages a ready-to-run vLLM server with vllm-plugin-FL.&lt;/p&gt;</description></item><item><title>Megatron</title><link>https://flagos-ai.github.io/release-info/application/megatron/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/megatron/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;The &lt;strong&gt;Megatron app image&lt;/strong&gt; is built on top of a &lt;code&gt;flagos-runtime&lt;/code&gt; image and
+packages a usable megatron-core library for megatron-lm based training.&lt;/p&gt;</description></item><item><title>Upgrading uv</title><link>https://flagos-ai.github.io/release-info/contribution/upgrading-uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/contribution/upgrading-uv/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");

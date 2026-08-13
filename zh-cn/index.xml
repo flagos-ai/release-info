@@ -29,7 +29,23 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  --&gt;
-&lt;h1 id="厂商接入"&gt;厂商接入 &lt;a href="#%e5%8e%82%e5%95%86%e6%8e%a5%e5%85%a5" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;如何把一个新的厂商/后端接入 FlagOS base 镜像流水线。你需要提供：&lt;/p&gt;</description></item><item><title>升级 uv</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/upgrading-uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/contribution/upgrading-uv/</guid><description>&lt;!--
+&lt;h1 id="厂商接入"&gt;厂商接入 &lt;a href="#%e5%8e%82%e5%95%86%e6%8e%a5%e5%85%a5" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;如何把一个新的厂商/后端接入 FlagOS base 镜像流水线。你需要提供：&lt;/p&gt;</description></item><item><title>Megatron</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/megatron/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/megatron/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;&lt;strong&gt;Megatron 应用镜像&lt;/strong&gt;构建在 &lt;code&gt;flagos-runtime&lt;/code&gt; 之上，打包可用的 megatron-core
+库，用于 megatron-lm 训练栈。&lt;/p&gt;</description></item><item><title>升级 uv</title><link>https://flagos-ai.github.io/release-info/zh-cn/contribution/upgrading-uv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/contribution/upgrading-uv/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
