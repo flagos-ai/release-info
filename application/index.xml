@@ -13,6 +13,23 @@
  See the License for the specific language governing permissions and
  limitations under the License.
  --&gt;
+
+&lt;div class="alert alert-danger d-flex" role="alert"&gt;
+ &lt;div class="flex-shrink-1 alert-icon"&gt;
+ 
+ &lt;span class="material-icons size-20 me-2"&gt;
+ report
+ &lt;/span&gt;&lt;/div&gt;
+ 
+ 
+ &lt;div class="w-100"&gt;
+ 
+🚧 **Under construction.** The vLLM app image is still being built and
+validated. It is **not yet published** — the content below documents work in
+progress, not a released product. Do not treat it as usable.
+
+ &lt;/div&gt;
+ &lt;/div&gt;
 &lt;p&gt;The &lt;strong&gt;vLLM app image&lt;/strong&gt; is built on top of a &lt;code&gt;flagos-runtime&lt;/code&gt; image and
 packages a ready-to-run vLLM server with vllm-plugin-FL.&lt;/p&gt;</description></item><item><title>Megatron</title><link>https://flagos-ai.github.io/release-info/application/megatron/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/megatron/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
@@ -29,5 +46,22 @@ packages a ready-to-run vLLM server with vllm-plugin-FL.&lt;/p&gt;</description>
  See the License for the specific language governing permissions and
  limitations under the License.
  --&gt;
+
+&lt;div class="alert alert-danger d-flex" role="alert"&gt;
+ &lt;div class="flex-shrink-1 alert-icon"&gt;
+ 
+ &lt;span class="material-icons size-20 me-2"&gt;
+ report
+ &lt;/span&gt;&lt;/div&gt;
+ 
+ 
+ &lt;div class="w-100"&gt;
+ 
+🚧 **Under construction.** The Megatron app image is still being built and
+validated. It is **not yet published** — the content below documents work in
+progress, not a released product. Do not treat it as usable.
+
+ &lt;/div&gt;
+ &lt;/div&gt;
 &lt;p&gt;The &lt;strong&gt;Megatron app image&lt;/strong&gt; is built on top of a &lt;code&gt;flagos-runtime&lt;/code&gt; image and
 packages a usable megatron-core library for megatron-lm based training.&lt;/p&gt;</description></item></channel></rss>
