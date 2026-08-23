@@ -379,7 +379,29 @@ packages a usable megatron-core library for megatron-lm based training.&lt;/p&gt
 &lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: xpu_container &amp;gt;= 1.0.13&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="built-on"&gt;Built on &lt;a href="#built-on" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-runtime/flagos-runtime-kunlunxin-xre5.37.1:2.1.2&lt;/code&gt; &lt;a href="../../runtime/kunlunxin-xre5.37.1/" title="View base image details" aria-label="View base image details"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>vllm0.20.2-sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/application/vllm0.20.2-sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/vllm0.20.2-sunrise-tangrt1.2.0/</guid><description>&lt;!--
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>vllm0.20.2-nvidia-cuda12.8</title><link>https://flagos-ai.github.io/release-info/application/vllm0.20.2-nvidia-cuda12.8/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/vllm0.20.2-nvidia-cuda12.8/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites &lt;a href="#prerequisites" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; NVIDIA H20&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 610.43.02&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container toolkit&lt;/strong&gt; &lt;em&gt;(optional)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="only for the toolkit launch below; the plain docker/podman command needs none" aria-label="only for the toolkit launch below; the plain docker/podman command needs none"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="built-on"&gt;Built on &lt;a href="#built-on" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-runtime/flagos-runtime-nvidia-cuda12.8:2.1.2&lt;/code&gt; &lt;a href="../../runtime/nvidia-cuda12.8/" title="View base image details" aria-label="View base image details"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.12&lt;/p&gt;</description></item><item><title>vllm0.20.2-sunrise-tangrt1.2.0</title><link>https://flagos-ai.github.io/release-info/application/vllm0.20.2-sunrise-tangrt1.2.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/vllm0.20.2-sunrise-tangrt1.2.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
