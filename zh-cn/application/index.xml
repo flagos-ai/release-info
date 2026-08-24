@@ -292,7 +292,51 @@
 &lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: nvidia-container-toolkit&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-runtime/flagos-runtime-nvidia-cuda13.3:2.1.2&lt;/code&gt; &lt;a href="../../runtime/nvidia-cuda13.3/" title="查看基础镜像详情" aria-label="查看基础镜像详情"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.12&lt;/p&gt;</description></item><item><title>vllm0.20.2-cambricon-neuware4.7.2</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-cambricon-neuware4.7.2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-cambricon-neuware4.7.2/</guid><description>&lt;!--
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.12&lt;/p&gt;</description></item><item><title>vllm0.20.2-ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-ascend-cann8.5.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 25.5.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-runtime/flagos-runtime-ascend-cann8.5.0:2.1.2&lt;/code&gt; &lt;a href="../../runtime/ascend-cann8.5.0/" title="查看基础镜像详情" aria-label="查看基础镜像详情"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.11&lt;/p&gt;</description></item><item><title>vllm0.20.2-ascend-cann9.0.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-ascend-cann9.0.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-ascend-cann9.0.0/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+--&gt;
+&lt;h2 id="前置条件"&gt;前置条件 &lt;a href="#%e5%89%8d%e7%bd%ae%e6%9d%a1%e4%bb%b6" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;架构:&lt;/strong&gt; aarch64&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;芯片型号:&lt;/strong&gt; Ascend 910B&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;宿主机驱动:&lt;/strong&gt; 26.0.rc1&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器工具包&lt;/strong&gt; &lt;em&gt;(可选)&lt;/em&gt; &lt;button type="button" class="toolkit-optional-info" data-bs-toggle="tooltip" data-bs-title="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装" aria-label="仅用于下方的工具包启动方式；直接使用 docker/podman 的命令无需安装"&gt;ⓘ&lt;/button&gt;: Ascend-docker-runtime &amp;gt;= 6.0.RC3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="镜像内容"&gt;镜像内容 &lt;a href="#%e9%95%9c%e5%83%8f%e5%86%85%e5%ae%b9" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="基于"&gt;基于 &lt;a href="#%e5%9f%ba%e4%ba%8e" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class="ms-3"&gt;&lt;code class="plain"&gt;harbor.baai.ac.cn/flagos-runtime/flagos-runtime-ascend-cann9.0.0:2.1.2&lt;/code&gt; &lt;a href="../../runtime/ascend-cann9.0.0/" title="查看基础镜像详情" aria-label="查看基础镜像详情"&gt;&lt;i class="material-icons align-middle size-20"&gt;open_in_new&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.11&lt;/p&gt;</description></item><item><title>vllm0.20.2-cambricon-neuware4.7.2</title><link>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-cambricon-neuware4.7.2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/application/vllm0.20.2-cambricon-neuware4.7.2/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
