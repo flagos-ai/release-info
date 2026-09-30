@@ -1303,7 +1303,6 @@ packages a usable megatron-core library for megatron-lm based training.&lt;/p&gt
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 3.3.5-server (&lt;code&gt;musa&lt;/code&gt; driver package)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Container toolkit:&lt;/strong&gt; MUSA 4.3.5 (bundled in the image)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>sglang0.5.11-ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/application/sglang0.5.11-ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/sglang0.5.11-ascend-cann8.5.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
@@ -1425,7 +1424,6 @@ packages a usable megatron-core library for megatron-lm based training.&lt;/p&gt
 &lt;li&gt;&lt;strong&gt;Architecture:&lt;/strong&gt; x86_64&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Chip models:&lt;/strong&gt; MTT S5000&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Host driver:&lt;/strong&gt; 3.3.5-server (&lt;code&gt;musa&lt;/code&gt; driver package)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Container toolkit:&lt;/strong&gt; MUSA 4.3.5 (bundled in the image)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="image-contents"&gt;Image contents &lt;a href="#image-contents" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="python"&gt;Python &lt;a href="#python" class="anchor" aria-hidden="true"&gt;&lt;i class="material-icons align-middle"&gt;link&lt;/i&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;3.10&lt;/p&gt;</description></item><item><title>sglang0.5.12-kunlunxin-xre5.37.1</title><link>https://flagos-ai.github.io/release-info/application/sglang0.5.12-kunlunxin-xre5.37.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/application/sglang0.5.12-kunlunxin-xre5.37.1/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
