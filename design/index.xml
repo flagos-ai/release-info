@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design on Release Info</title><link>https://flagos-ai.github.io/release-info/design/</link><description>Recent content in Design on Release Info</description><generator>Hugo</generator><language>en</language><atom:link href="https://flagos-ai.github.io/release-info/design/index.xml" rel="self" type="application/rss+xml"/><item><title>vllm-plugin-FL</title><link>https://flagos-ai.github.io/release-info/design/vllm-plugin-fl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/design/vllm-plugin-fl/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;vllm-plugin-FL is installed into every vLLM app image as a prebuilt wheel from
+the vendor PyPI. Most backends get a pure-Python wheel; a few get a &lt;strong&gt;native&lt;/strong&gt;
+wheel that also carries a compiled &lt;code&gt;vllm_fl._C&lt;/code&gt; extension.&lt;/p&gt;</description></item></channel></rss>
