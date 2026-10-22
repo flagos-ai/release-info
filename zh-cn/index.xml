@@ -126,7 +126,25 @@ per-backend 的 wheel，而不是从厂商的 wheel 安装。&lt;/p&gt;</descrip
  limitations under the License.
  --&gt;
 &lt;p&gt;FlagGems 是 FlagOS 镜像里 vLLM 所运行的算子库。它按一个关键事实分成三条
-发布通道——&lt;code&gt;flag_gems&lt;/code&gt; 包是纯 Python，C++ 算子库则不是：&lt;/p&gt;</description></item><item><title>打包渠道</title><link>https://flagos-ai.github.io/release-info/zh-cn/usage/packaging-channels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/usage/packaging-channels/</guid><description>&lt;!--
+发布通道——&lt;code&gt;flag_gems&lt;/code&gt; 包是纯 Python，C++ 算子库则不是：&lt;/p&gt;</description></item><item><title>FlagLibs</title><link>https://flagos-ai.github.io/release-info/zh-cn/design/flaglibs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/design/flaglibs/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;FlagLibs 把 FlagOS 的&lt;strong&gt;算子库&lt;/strong&gt;（FlagAttention、FlagSparse、FlagBLAS、
+FlagAudio、FlagFFT、FlagGems-vllm、FlagGems-sglang）发布为可安装的 wheel。
+它们全都是纯 Python，这决定了整条线：wheel 是 &lt;code&gt;py3-none-any&lt;/code&gt;，所以没有厂商
+工具链、没有容器、也没有 glibc floor——一个普通 venv 脚本就能把它们全部构建。&lt;/p&gt;</description></item><item><title>打包渠道</title><link>https://flagos-ai.github.io/release-info/zh-cn/usage/packaging-channels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/usage/packaging-channels/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
