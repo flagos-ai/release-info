@@ -113,7 +113,24 @@ all Python packages.&lt;/p&gt;</description></item><item><title>FlagCX</title><l
  --&gt;
 &lt;p&gt;FlagCX is the collective-communication library (a NCCL-alike). build-infra
 ships it on three channels, one backend per container, all reading one
-&lt;code&gt;backends.yaml&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>Packaging Channels</title><link>https://flagos-ai.github.io/release-info/usage/packaging-channels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/usage/packaging-channels/</guid><description>&lt;!--
+&lt;code&gt;backends.yaml&lt;/code&gt;:&lt;/p&gt;</description></item><item><title>FlagGems</title><link>https://flagos-ai.github.io/release-info/design/flaggems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/design/flaggems/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;FlagGems is the operator library vLLM runs on in FlagOS images. It is shipped
+three ways, split by the one fact that matters — the &lt;code&gt;flag_gems&lt;/code&gt; package is
+pure Python, the C++ operator library is not:&lt;/p&gt;</description></item><item><title>Packaging Channels</title><link>https://flagos-ai.github.io/release-info/usage/packaging-channels/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/usage/packaging-channels/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
