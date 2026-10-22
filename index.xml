@@ -210,7 +210,25 @@ nothing and no dependency surgery is needed.&lt;/p&gt;</description></item><item
 native wheel would clobber the runtime&amp;rsquo;s torch matrix, so the line builds from
 the &lt;strong&gt;non-CUDA (&lt;code&gt;srt_empty&lt;/code&gt;) variant&lt;/strong&gt;: its METADATA is torch-free and
 &lt;code&gt;sgl-kernel&lt;/code&gt;-free by construction, and repack only stamps the &lt;code&gt;+flagos&lt;/code&gt; version
-suffix.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</guid><description>&lt;!--
+suffix.&lt;/p&gt;</description></item><item><title>verl</title><link>https://flagos-ai.github.io/release-info/design/verl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/design/verl/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;The verl app image = runtime image + a &lt;strong&gt;single-step &lt;code&gt;pip install&lt;/code&gt;&lt;/strong&gt; of a wheel
+built from the verl-FL fork. verl is pure Python, so the wheel is &lt;code&gt;py3-none-any&lt;/code&gt;
+— &lt;strong&gt;one wheel for all 17 backends&lt;/strong&gt;, no per-ABI split. Training rides megatron-core,
+rollout rides vllm + vllm-plugin-fl; the platform is chosen by &lt;code&gt;VERL_PLATFORM&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/base/ascend-cann8.5.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");

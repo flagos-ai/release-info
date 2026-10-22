@@ -199,7 +199,25 @@ repack sdist 以剥离 torch 依赖——megatron 走的是 &lt;strong&gt;fork �
 &lt;p&gt;SGLang app 镜像 = runtime 镜像 + 从自建 sdist repack 出的 per-vendor wheel 的
 &lt;strong&gt;单步 &lt;code&gt;pip install&lt;/code&gt;&lt;/strong&gt;。原生 wheel 会顶掉 runtime 的 torch 矩阵，所以本线从
 &lt;strong&gt;非 CUDA（&lt;code&gt;srt_empty&lt;/code&gt;）变体&lt;/strong&gt;构建：其 METADATA 按构造零 torch、零
-&lt;code&gt;sgl-kernel&lt;/code&gt;，repack 只需打上 &lt;code&gt;+flagos&lt;/code&gt; 版本后缀。&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</guid><description>&lt;!--
+&lt;code&gt;sgl-kernel&lt;/code&gt;，repack 只需打上 &lt;code&gt;+flagos&lt;/code&gt; 版本后缀。&lt;/p&gt;</description></item><item><title>verl</title><link>https://flagos-ai.github.io/release-info/zh-cn/design/verl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/design/verl/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;verl app 镜像 = runtime 镜像 + 从 verl-FL fork 构建的 wheel 的&lt;strong&gt;单步
+&lt;code&gt;pip install&lt;/code&gt;&lt;/strong&gt;。verl 是纯 Python，wheel 为 &lt;code&gt;py3-none-any&lt;/code&gt;——&lt;strong&gt;一个 wheel 通吃
+17 个后端&lt;/strong&gt;，无 per-ABI 拆分。训练走 megatron-core，rollout 走 vllm +
+vllm-plugin-fl；平台由 &lt;code&gt;VERL_PLATFORM&lt;/code&gt; 选择。&lt;/p&gt;</description></item><item><title>ascend-cann8.5.0</title><link>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/base/ascend-cann8.5.0/</guid><description>&lt;!--
  Copyright 2026 FlagOS Contributors
 
  Licensed under the Apache License, Version 2.0 (the "License");
