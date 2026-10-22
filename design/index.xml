@@ -32,4 +32,21 @@ wheel that also carries a compiled &lt;code&gt;vllm_fl._C&lt;/code&gt; extension
  --&gt;
 &lt;p&gt;FlagTree (the Triton fork) is the default compiler in runtime and app images.
 It is built from source into per-backend wheels, rather than installed from a
-vendor&amp;rsquo;s wheel.&lt;/p&gt;</description></item></channel></rss>
+vendor&amp;rsquo;s wheel.&lt;/p&gt;</description></item><item><title>FlagCX</title><link>https://flagos-ai.github.io/release-info/design/flagcx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/design/flagcx/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;FlagCX is the collective-communication library (a NCCL-alike). build-infra
+ships it on three channels, one backend per container, all reading one
+&lt;code&gt;backends.yaml&lt;/code&gt;:&lt;/p&gt;</description></item></channel></rss>

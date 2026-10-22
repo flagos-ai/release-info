@@ -31,4 +31,20 @@
  limitations under the License.
  --&gt;
 &lt;p&gt;FlagTree（Triton fork）是运行时镜像与 app 镜像的默认编译器。它从源码构建为
-per-backend 的 wheel，而不是从厂商的 wheel 安装。&lt;/p&gt;</description></item></channel></rss>
+per-backend 的 wheel，而不是从厂商的 wheel 安装。&lt;/p&gt;</description></item><item><title>FlagCX</title><link>https://flagos-ai.github.io/release-info/zh-cn/design/flagcx/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://flagos-ai.github.io/release-info/zh-cn/design/flagcx/</guid><description>&lt;!--
+ Copyright 2026 FlagOS Contributors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ --&gt;
+&lt;p&gt;FlagCX 是集合通信库（类 NCCL）。build-infra 通过三条通道发布它，一个后端
+一个容器，三条通道共读一个 &lt;code&gt;backends.yaml&lt;/code&gt;：&lt;/p&gt;</description></item></channel></rss>
