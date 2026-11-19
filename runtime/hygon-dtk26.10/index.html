@@ -52,7 +52,7 @@ this base image&rsquo;s clang-18 (the <code>5f9d5e</code> aillvm build) parses. 
 <code>Intrinsic has incorrect argument type</code>.</li><li>The wheel is built on the <code>hcu-dtk2610</code> builder, which now stages the
 <code>188a510</code> LLVM tree that ref names, the <code>libdushmem_device_gfx936.bc</code>
 bitcode its <code>hcu.py</code> copies into <code>/opt/dtk/dushmem/lib/</code>, and <code>libzstd-dev</code>
-that tree&rsquo;s CMake exports require.</li></ul><p><em>2026-11-10 09:27:16</em></p><p>Rebuild to ship the current in-image helper script: the <code>compiler</code> script&rsquo;s pip installs now honour a pip cache mounted at <code>PIP_CACHE_DIR</code> instead of re-downloading the wheel every time (#1709). Nothing else about the image changes.</p><p><em>2026-11-04 11:53:19</em></p><ul><li>Vendor triton moves to <code>3.7.0+dtk2610.torch2120.2611032029.g56f888</code>: its
+that tree&rsquo;s CMake exports require.</li></ul><p><em>2026-11-10 09:27:16</em></p><p>Rebuild to ship the current in-image helper script: the <code>compiler</code> script&rsquo;s pip installs now honour a pip cache mounted at <code>PIP_CACHE_DIR</code> instead of re-downloading the wheel every time (#1709).</p><p><em>2026-11-04 11:53:19</em></p><ul><li>Vendor triton moves to <code>3.7.0+dtk2610.torch2120.2611032029.g56f888</code>: its
 <code>nvidia</code> driver no longer claims the device, so <code>hcu</code> is the only active
 driver and Triton is no longer disabled at startup. Under the previous
 <code>torch2130</code> build both <code>amd</code>/<code>nvidia</code> probing and the DTK CUDA stub left
