@@ -47,13 +47,7 @@ Table of Contents</button><nav id=toc-mobile><ul class=dropdown-menu><li><ul><li
 prepends the SDK paths only when they are absent, keeping any path the
 container was started with (#1866).</li><li>Non-interactive bash loads <code>vendor.sh</code> through <code>BASH_ENV</code>, so the old
 absolute <code>export</code> dropped the caller&rsquo;s entries before Python ever ran
-and broke imports that depended on them.</li></ul><p><em>2026-11-24 11:00:47</em></p><ul><li>Installs a second aillvm tree at <code>/opt/dtk-26.04-i64</code>, the
-<code>dtk_llvm-1.0.0+dtk2604...5f9d5e</code> build, beside the bare <code>dtk_llvm.run</code>
-tree. FlagTree wheels from 2026-11-06 emit <code>make.buffer.rsrc</code> with an
-i64 numRecords that the bare tree&rsquo;s clang-18 rejects (i32 only), while
-the vendor triton 3.5.1 still needs the i32 tree; the two <code>.run</code>s each
-lay a whole DTK, so the i64 one gets its own root. The runtime&rsquo;s
-<code>compiler()</code> selects the matching tree via <code>TRITON_HIP_CLANG_PATH</code>.</li></ul><p><em>2026-10-27 02:02:24</em></p><ul><li><code>libgoogle-glog0v6t64</code> is installed for the <code>libglog.so.1</code> soname: torch&rsquo;s
+and broke imports that depended on them.</li></ul><p><em>2026-10-27 02:02:24</em></p><ul><li><code>libgoogle-glog0v6t64</code> is installed for the <code>libglog.so.1</code> soname: torch&rsquo;s
 c10 headers make an extension build link glog (<code>C10_USE_GLOG</code>) and DTK
 ships no such library, so <code>import vllm_fl._C</code> failed and this backend&rsquo;s
 application layer could not load its native plugin.</li></ul><h3 id=220>2.2.0 <a href=#220 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h3><p><em>2026-09-17 01:20:40</em></p><ul><li>Rebuilt to carry the new stack-wide tag; nothing in this layer changed.</li></ul><h3 id=212>2.1.2 <a href=#212 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h3><p><em>2026-08-16 03:44:50</em></p><ul><li>First delivery: Hygon DTK 26.04 with the DTK LLVM toolchain on
