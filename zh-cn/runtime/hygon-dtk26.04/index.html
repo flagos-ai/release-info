@@ -45,7 +45,13 @@ Table of Contents</button><nav id=toc-mobile><ul class=dropdown-menu><li><ul><li
   harbor.baai.ac.cn/flagos-runtime/flagos-runtime-hygon-dtk26.04:2.3.0 bash</code>
   </pre></div><h2 id=验证>验证 <a href=#%e9%aa%8c%e8%af%81 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h2><p>在容器内，确认加速器可见：</p><div class=prism-codeblock><pre id=06fc9ff class=language-bash>
   <code>hy-smi</code>
-  </pre></div><h2 id=更新日志>更新日志 <a href=#%e6%9b%b4%e6%96%b0%e6%97%a5%e5%bf%97 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h2><h3 id=230>2.3.0 <a href=#230 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h3><p><em>2026-11-19 15:44:19</em></p><ul><li>基于当前 base 镜像重建，该 base 不再让 <code>vendor.sh</code> 覆盖调用方的 <code>PYTHONPATH</code>（#1882）。</li></ul><p><em>2026-11-19 13:41:54</em></p><ul><li>为该后端的 runtime 依赖新增 <code>amdsmi==7.0.2</code>，使 torch 的 cuda 监控调用可用。
+  </pre></div><h2 id=更新日志>更新日志 <a href=#%e6%9b%b4%e6%96%b0%e6%97%a5%e5%bf%97 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h2><h3 id=230>2.3.0 <a href=#230 class=anchor aria-hidden=true><i class="material-icons align-middle">link</i></a></h3><p><em>2026-11-25 13:08:10</em></p><p>apex 回到本线，pin 为 1.7.0+dtk2604.torch2100.2609201739.g9783d4：索引上已有
+cp310/torch2100 构建，依赖列表当初略去它的理由不再成立。镜像其余内容不变。</p><p><em>2026-11-24 15:55:52</em></p><ul><li>本线升到 torch 2.10.0、triton 3.6.0、torchvision 0.25.0、torchaudio 2.10.0，
+flash_attn 与 transformer_engine 切到 torch2100 线，flagcx 0.14.1 针对
+torch 2.10 重编。apex 移除：无 cp310/torch2100 构建，且 MLF 四处使用均有
+try/except 兜底。FlagTree 为 0.7.1a1+hcu3.6，<code>compiler()</code> 现在把两个编译器
+都指向本 base 唯一那棵 aillvm 树——那正是两者都需要的构建。
+已在 BW1000 节点验证：copy、axpy 与 fp16 matmul maxdiff 均为 0.0。</li></ul><p><em>2026-11-19 15:44:19</em></p><ul><li>基于当前 base 镜像重建，该 base 不再让 <code>vendor.sh</code> 覆盖调用方的 <code>PYTHONPATH</code>（#1882）。</li></ul><p><em>2026-11-19 13:41:54</em></p><ul><li>为该后端的 runtime 依赖新增 <code>amdsmi==7.0.2</code>，使 torch 的 cuda 监控调用可用。
 <code>hy-smi</code> 不暴露 Python API，而驱动在 <code>/opt/hyhal/share/smi</code> 的 amdsmi
 源码树是宿主挂载、镜像从不安装，因此该模块此前完全缺失。</li></ul><p><em>2026-11-12 01:34:37</em></p><ul><li>python 3.10 闭包中加入 torchaudio 2.9.0+das.opt1.dtk2604.torch290，使
 DTK 26.04 runtime 带齐多模态模型所需的 torch 生态三件套
